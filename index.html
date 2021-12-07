@@ -8,36 +8,77 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/navBar.css">
   <link rel="stylesheet" href="./style/style.css">
   <title>Real Futsal</title>
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container pt-2 pb-2">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <div class="container header">
+      <div class="logo btn-navBar">
+        <a href="/index.html">
+          <h1>Logo</h1>
+        </a>
+        <button id="btnativar">
+          <img src="./img/menu.png" alt="Menu" />
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Sobre nós</a>
-            <a class="nav-link" href="#">Contato</a>
-          </div>
-        </div>
       </div>
-    </nav>
+      <div class="navBar" id="navbar">
+        <ul>
+          <li><a href="#about">Sobre nós</a></li>
+          <li><a href="#project">Projeto</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
   </header>
   <main>
-    <h1>Seja bem vindo ao site do Real Futsal</h1>
-    <h4>Projeto de futsal gratuito para todas as crianças</h4>
+    <div class="container d-flex align-items-center justify-content-center">
+      <h1>Seja bem vindo ao site do Real Futsal</h1>
+      <h4>Projeto de futsal <strong>gratuito</strong> para todas as crianças</h4>
+    </div>
+    
   </main>
+
+  <section class="about container pt-4 pb-4" id="about">
+    <h2 class="title">
+      Sobre nós
+    </h2>
+    <div class="aboutArea pt-5">
+      <p>
+        Lorem ipsum pulvinar consectetur proin aliquam platea tortor donec, nullam sed aenean dictum tempor sodales litora, lectus netus in ligula molestie quisque diam. 
+        pharetra nam tristique placerat etiam est phasellus, auctor condimentum mi congue sociosqu fermentum urna, quis nec hendrerit netus hendrerit. 
+        feugiat eleifend habitasse laoreet phasellus quisque nostra convallis neque orci nostra, gravida platea posuere maecenas pulvinar imperdiet ut mollis sem. 
+        viverra elementum potenti dolor sagittis facilisis conubia inceptos, dui ad conubia maecenas phasellus semper cras, vulputate cursus bibendum varius euismod blandit. 
+        pretium commodo neque aptent platea himenaeos per, neque ante sapien est phasellus tellus sed, convallis netus sit aliquam taciti. 
+      </p>
+      <img src="./img/icon1.svg" alt="Futsal" />
+    </div>
+  </section>
+
+  <section class="pt-4 pb-4 project-bg" id="project">
+    <div class="container">
+      <h2 class="title">
+        Projeto
+      </h2>
+      <div class="projectArea pt-5">
+        <img src="./img/futsal.jpg" alt="Futsal" />
+        <p>
+          Lorem ipsum pulvinar consectetur proin aliquam platea tortor donec, nullam sed aenean dictum tempor sodales litora, lectus netus in ligula molestie quisque diam. 
+          pharetra nam tristique placerat etiam est phasellus, auctor condimentum mi congue sociosqu fermentum urna, quis nec hendrerit netus hendrerit. 
+          feugiat eleifend habitasse laoreet phasellus quisque nostra convallis neque orci nostra, gravida platea posuere maecenas pulvinar imperdiet ut mollis sem. 
+          viverra elementum potenti dolor sagittis facilisis conubia inceptos, dui ad conubia maecenas phasellus semper cras, vulputate cursus bibendum varius euismod blandit. 
+          pretium commodo neque aptent platea himenaeos per, neque ante sapien est phasellus tellus sed, convallis netus sit aliquam taciti. 
+        </p>
+    </div>
+    
+  </section>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-  
+  <script src="./script/simple-slide.js"></script>
+  <script src="./script/script.js"></script>
 </body>
 </html>

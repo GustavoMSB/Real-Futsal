@@ -1,0 +1,136 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #121219;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #121219;
+}
+
+header {
+  width: 100%;
+  background: var(--yellow);
+  letter-spacing: 1px;
+  display: block;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+@media only screen and (min-width: 900px) {
+  .btn-navBar button {
+    display: none;
+  }
+
+  .navBar {
+    display: block;
+  }
+}
+
+.active {
+  color: #000;
+}
+
+.logo {
+  padding: .5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.logo h1{
+  margin: 0;
+}
+
+
+.navBar {
+  display: block;
+}
+
+.navBar ul {
+  display: flex;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.navBar ul li a {
+  color: #121231;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.navBar ul li a:hover {
+  outline: #112121;
+  color: #121212;
+}
+
+.navBar ul li a {
+  padding-left: 1rem;
+}
+
+#btnativar {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+#btnativar img {
+  height: 2.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    display: block;
+  }
+
+  .btn-navBar {
+    display: flex;
+  }
+
+  .navBar {
+    display: none;
+  }
+  .navBar ul {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .navBar ul li {
+    margin-bottom: 0.5rem;
+  }
+
+  .navBar ul li a {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .navBar {
+    display: block !important;
+  }
+}
+
+.logo img {
+  max-width: 4rem;
+}
